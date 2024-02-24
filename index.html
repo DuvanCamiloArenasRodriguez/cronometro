@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <!-- <div class="opacidad"> -->
@@ -22,18 +23,25 @@
                 <span id="segundos">00</span>
             </div>
             <div class="div-botones">
-                <div class="boton">
-                    <button >
+                <div class="pause boton" id="parar">
+                    <button id="pausa">
+                        <i class='bx bx-pause'></i>
+                    </button>
+                    <span>Pause</span>
+                </div>
+                <div class="boton" id="iniciar" >
+                    <button id="play">
                         <i class='bx bx-play'></i>
                     </button>
                     <span>Play</span>
                 </div>
                 <div class="boton">
-                    <button type="reset">
+                    <button type="reset" id="repeat">
                         <i class='bx bx-repeat'></i>
                     </button>
                     <span>Repeat</span>
                 </div>
+                
             </div>
             
         </div>

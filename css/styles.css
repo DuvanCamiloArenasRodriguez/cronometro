@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     /* opacity: 0.5; */
+    font-size: 16px;
 }
 
 /* .opacidad{
@@ -34,7 +35,8 @@ header {
 
 h1 {
     margin-top: 30px;
-    font-size: 4rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+    
     text-align: center;
 }
 
@@ -65,7 +67,8 @@ footer {
 }
 
 .numeros span{
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 2vw, 3rem)
+    
 }
 
 .div-botones {
@@ -90,11 +93,13 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    
 }
 
 .bx {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    
 }
 
 button:hover {
@@ -102,6 +107,24 @@ button:hover {
 }
 
 footer {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    
     color: #fbf2f2;
+}
+
+.pause {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .cronometro {
+        width: 45vw;
+        height: 20vh;
+        background-color: #ffefcd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
